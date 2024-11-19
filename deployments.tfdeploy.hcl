@@ -16,7 +16,7 @@ deployment "development" {
   }
 }
 
-/*
+
 deployment "production" {
   inputs = {
     cluster_name        = "stacks-demo"
@@ -27,7 +27,7 @@ deployment "production" {
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
 }
-*/
+
 
 orchestrate "auto_approve" "successful_plan" {
   check {
