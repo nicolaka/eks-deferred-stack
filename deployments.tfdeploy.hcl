@@ -27,4 +27,12 @@ deployment "production" {
   }
 }
 
+orchestrate "auto_approve" "successful_plan" {
+  check {
+    condition = context.plan.deployment == deployment.development
+    reason    = "Auto-approve development deployment"
+  }
+}
+
+
 
