@@ -39,7 +39,6 @@ deployment "production" {
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
 }
-*/
 
 orchestrate "auto_approve" "successful_plan" {
   check {
@@ -50,3 +49,4 @@ orchestrate "auto_approve" "successful_plan" {
 
 
 
+*/
