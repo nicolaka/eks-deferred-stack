@@ -5,6 +5,7 @@ identity_token "aws" {
   audience =  ["aws.workload.identity"]
 }
 
+/*
 deployment "development" {
   inputs = {
     cluster_name        = "stacks-demo"
@@ -38,7 +39,7 @@ deployment "production" {
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
 }
-
+*/
 
 orchestrate "auto_approve" "successful_plan" {
   check {
