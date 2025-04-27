@@ -5,7 +5,7 @@ identity_token "aws" {
   audience =  ["aws.workload.identity"]
 }
 
-/*
+
 deployment "development" {
   inputs = {
     cluster_name        = "stacks-demo"
@@ -16,7 +16,7 @@ deployment "development" {
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
 }
-
+/*
 deployment "development-west" {
   inputs = {
     cluster_name        = "stacks-demo"
