@@ -5,7 +5,7 @@ identity_token "aws" {
   audience =  ["aws.workload.identity"]
 }
 
-
+/*
 deployment "development" {
   inputs = {
     cluster_name        = "stacks-demo"
