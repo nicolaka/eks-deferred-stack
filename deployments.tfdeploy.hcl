@@ -5,10 +5,10 @@ identity_token "aws" {
   audience =  ["aws.workload.identity"]
 }
 
-/*
-deployment "development" {
+
+deployment "development-east" {
   inputs = {
-    cluster_name        = "stacks-demo"
+    cluster_name        = "stacks-eks-us-east-2-dev"
     kubernetes_version  = "1.30"
     region              = "us-east-2"
     role_arn            = "arn:aws:iam::713653441474:role/nk-aws-openid-role"
@@ -16,10 +16,11 @@ deployment "development" {
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
 }
-/*
+
+
 deployment "development-west" {
   inputs = {
-    cluster_name        = "stacks-demo"
+    cluster_name        = "stacks-eks-west-dev"
     kubernetes_version  = "1.30"
     region              = "us-west-2"
     role_arn            = "arn:aws:iam::713653441474:role/NKSTACK"
@@ -28,6 +29,7 @@ deployment "development-west" {
   }
 }
 
+/*
 
 deployment "production" {
   inputs = {
@@ -46,7 +48,6 @@ orchestrate "auto_approve" "successful_plan" {
     reason    = "Auto-approve development deployment"
   }
 }
-
 
 
 */
