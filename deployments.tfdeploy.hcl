@@ -23,7 +23,7 @@ deployment "development-west" {
     cluster_name        = "stacks-eks-west-dev"
     kubernetes_version  = "1.30"
     region              = "us-west-2"
-    role_arn            = "arn:aws:iam::713653441474:role/NKSTACK"
+    role_arn            = "arn:aws:iam::713653441474:role/nk-aws-openid-role"
     identity_token      = identity_token.aws.jwt
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
@@ -33,10 +33,10 @@ deployment "development-west" {
 
 deployment "production" {
   inputs = {
-    cluster_name        = "stacks-demo"
+    cluster_name        ="stacks-eks-east-prod"
     kubernetes_version  = "1.30"
     region              = "us-east-2"
-    role_arn            = "arn:aws:iam::713653441474:role/NKSTACK"
+    role_arn            = "arn:aws:iam::713653441474:role/nk-aws-openid-role"
     identity_token      = identity_token.aws.jwt
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
