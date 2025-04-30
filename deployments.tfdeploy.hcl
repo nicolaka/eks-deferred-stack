@@ -29,7 +29,6 @@ deployment "development-west" {
   }
 }
 
-/*
 
 deployment "production" {
   inputs = {
@@ -50,4 +49,3 @@ orchestrate "auto_approve" "successful_plan" {
 }
 
 
-*/
