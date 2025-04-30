@@ -43,7 +43,14 @@ deployment "production" {
 
 orchestrate "auto_approve" "successful_plan" {
   check {
-    condition = context.plan.deployment == deployment.development
+    condition = context.plan.deployment == deployment.development-east
+    reason    = "Auto-approve development deployment"
+  }
+}
+
+orchestrate "auto_approve" "successful_plan" {
+  check {
+    condition = context.plan.deployment == deployment.development-west
     reason    = "Auto-approve development deployment"
   }
 }
