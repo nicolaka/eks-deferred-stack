@@ -5,7 +5,7 @@ identity_token "aws" {
   audience =  ["aws.workload.identity"]
 }
 
-
+/*
 deployment "development-east" {
   inputs = {
     cluster_name        = "stacks-eks-us-east-2-dev"
@@ -41,6 +41,7 @@ deployment "production" {
   }
 }
 
+
 orchestrate "auto_approve" "successful_plan" {
   check {
     condition = context.plan.deployment == deployment.development-east
@@ -56,3 +57,4 @@ orchestrate "auto_approve" "successful_plan" {
 }
 
 
+*/
