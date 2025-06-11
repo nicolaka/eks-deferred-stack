@@ -5,7 +5,7 @@ identity_token "aws" {
   audience =  ["aws.workload.identity"]
 }
 
-/*
+
 deployment "development-east" {
   inputs = {
     cluster_name        = "stacks-eks-us-east-2-dev"
@@ -17,7 +17,7 @@ deployment "development-east" {
   }
 }
 
-
+/*
 deployment "development-west" {
   inputs = {
     cluster_name        = "stacks-eks-west-dev"
