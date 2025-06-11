@@ -28,9 +28,9 @@ deployment "development-west" {
     default_tags        = { stacks-preview-example = "eks-deferred-stack" }
   }
 }
+*/
 
-
-deployment "production" {
+deployment "production-east" {
   inputs = {
     cluster_name        ="stacks-eks-east-prod"
     kubernetes_version  = "1.30"
