@@ -49,12 +49,12 @@ orchestrate "auto_approve" "successful_plan" {
   }
 }
 
+/*
 orchestrate "auto_approve" "successful_plan" {
   check {
     condition = context.plan.deployment == deployment.development-west
     reason    = "Auto-approve development deployment"
   }
 }
-
 
 */
